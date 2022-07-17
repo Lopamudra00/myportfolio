@@ -1,0 +1,134 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+/* for hey folks */
+.i-name>:nth-child(1) {
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(2) {
+    color: orange;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(3) {
+    font-weight: 100;
+    color: grey;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.i-button {
+    width: 6rem;
+    height: 2rem;
+}
+
+.i-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0rem;
+
+}
+
+.i-icons>* {
+    transform: scale(0.5);
+    /* half of the original size */
+}
+
+.i-icons>*:hover {
+    cursor: pointer;
+}
+
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right>* {
+    position: absolute;
+    z-index: 1;
+
+}
+
+.i-right>:nth-child(1) {
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+    z-index: 2;
+}
+
+.i-right>:nth-child(2) {
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+    z-index: 3;
+}
+
+.i-right>:nth-child(3) {
+    transform: scale(1.05);
+    left: -48%;
+    top: -55%;
+    bottom: 20px;
+    z-index: 4;
+}
+
+.i-right>:nth-child(4) {
+
+    top: -183%;
+
+    transform: scale(0.15);
+
+
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -1%;
+    left: 56%;
+
+}
+
+@media screen and (max-width:480px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .i-right {
+        transform: scale(0.8);
+        left: -3rem;
+    }
+
+    .i-right .blur {
+        display: none;
+    }
+
+    .floating-div {
+        top: -7rem;
+    }
+}

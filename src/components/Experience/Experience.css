@@ -1,0 +1,142 @@
+.experience {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+    margin-bottom: 13rem;
+}
+
+.e-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.e-left>:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.e-left>:nth-child(2) {
+    color: gray;
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+
+}
+
+.e-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+    z-index: 50;
+}
+
+.card {
+    position: absolute;
+}
+
+.card>* {
+    position: relative;
+    z-index: 100;
+
+}
+
+.CV {
+    width: 8rem;
+    z-index: 50;
+}
+
+
+
+.e-blur1 {
+    z-index: -100;
+
+    left: 10rem;
+}
+
+.e-blur2 {
+    z-index: -100;
+    top: 30rem;
+    left: 45rem;
+}
+
+.e-center {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    margin-top: 10rem;
+    width: 20rem;
+
+    left: 24rem;
+    top: 75rem;
+    bottom: 10rem;
+}
+
+.achievement {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.circle {
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.circle::before {
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, #87e6fb 0%, rgb(244, 244, 158));
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: var(--boxShadow);
+}
+
+.achievement span:nth-of-type(2) {
+    color: var(--orange);
+}
+
+@media screen and (max-width:480px) {
+    .experience {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+
+    .card>* {
+        position: static;
+    }
+
+}

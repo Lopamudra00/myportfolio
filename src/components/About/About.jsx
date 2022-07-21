@@ -18,9 +18,9 @@ const About = () => {
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad porro enim architecto.
                     <br />
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt error suscipit at libero tempora qui, reiciendis sapiente minima doloremque, illum nobis voluptates velit dolorum aperiam doloribus voluptatem nulla omnis aliquid!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iusto placeat asperiores consectetur quam mollitia nisi, laudantium consequuntur excepturi optio! Quod earum possimus aliquam totam omnis in nam odio quisquam!
+                    I am an ambitious and a tech-minded girl who wants to explore more in the world of technology and dive as deeperas I can in the same sea. Right now, I
+                    am exploring the field of web development and am striving to unearth the best of me in it.
+
                 </span>
                 <div className="blur e-blur1" style={{
                     background: "#ABF1FF94"
